@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 45);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(20, 20, 77);
+}
+.left{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(5, 5, 80);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-size: 1.05rem;
+    cursor: pointer;
+    color: aquamarine;
+}
+
+.firstsection{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+    
+}
+.leftsection span {
+    color: rgb(171, 91, 246);
+}
+
+.rightsection img{
+    width: 90%;
+    margin: 50px 0;
+}
+.secondSection{
+    margin: 60px 160px;
+}
+.secondSection h1{
+    font-size: 2rem;
+    
+}
+.text-gray{
+    color: gray;
+}
+.secondSection hr{
+  border: 0;
+  background-color: rgb(79, 165, 231);
+  height: 1.5px;
+  margin: 40px 0px;
+}

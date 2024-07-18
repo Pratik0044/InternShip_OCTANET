@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./14042784.jpg);
+    background-size:cover;
+    background-position: top;
+    font-family:'Times New Roman', Times, serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(102, 151, 191, 0.5);
+}
+
+.rightNav ul{
+    display: flex; 
+    gap: 50px;
+    font-size: larger;
+    font-weight: bold;
+}
+.rightNav ul li {
+   list-style-type: none;
+
+}
+.rightNav ul li a{
+    text-decoration: none;
+    color: rgb(75, 69, 87);
+
+ }
+ .leftNav{
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    font-weight: bold;
+    
+ }
+ .leftNav a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    font-weight: bold;
+    
+ }
+
+.leftNav img{
+    width: 40px;
+    
+}
+
+.leftNav a{
+    text-decoration: none;
+    color: rgb(75, 69, 87);
+}
+
+.background {
+    background-color: rgba(87, 144, 192, 0.7);
+    width:500px;
+    min-height:600px;
+    position: relative;
+    margin:50px auto;
+    border-radius: 5%;
+    filter: drop-shadow(0 0 90px rgb(163, 56, 196));
+    border: 1px solid rgb(155, 83, 160);
+    padding: 30px ;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+.background hr{
+    position: relative;
+    top: 8px ;
+}
+.input{
+    position: relative;
+    /* top: -220px; */
+    margin: auto;
+}
+#input-box, button{
+    flex: 1;
+    border:none;
+    outline: none;
+    border-radius: 25px;
+    background: rgb(184, 182, 182);
+    padding: 10px;
+    font-weight: 15px;
+    
+}
+button{
+    width: 70px;
+    position: relative;
+    left: -35px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.input{
+    position: relative;
+    top: -140px;
+}
+
+.Todos ul{
+    position: relative;
+    
+}
+.Todos li{
+    list-style-type: none;
+    border:none;
+    padding: 12px 8px 12px 50px;
+    margin: 5px;
+    color: white;
+    position: relative;
+    top: -295px;
+    font-size: large;
+    cursor: pointer;
+    width: auto;
+}
+
+.Todos li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./checkbox-blank-circle-line.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}
+
+.Todos ul li.checked::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./checkbox-circle-line.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}
+
+.Todos ul li.checked{
+    color: #d0c6c6;
+    text-decoration: line-through;
+    
+}

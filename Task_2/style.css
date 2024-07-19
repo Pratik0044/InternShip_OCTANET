@@ -69,60 +69,78 @@ body{
     border: 1px solid rgb(155, 83, 160);
     padding: 30px ;
     display: flex;
-    flex-direction: column;
-  justify-content: center;
+  
 }
+
 .background hr{
-    position: relative;
-    top: 8px ;
+    position: absolute;
+    width: 441px;
+    top: 64px;
 }
 .input{
-    position: relative;
-    /* top: -220px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: -35px;
     margin: auto;
 }
-#input-box, button{
+#input-box{
     flex: 1;
     border:none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 40px;
     background: rgb(184, 182, 182);
-    padding: 10px;
+    padding: 16px;
     font-weight: 15px;
+    
     
 }
 button{
-    width: 70px;
-    position: relative;
-    left: -35px;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    padding: 16px 50px ;
     background: #ff5945;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-}
-.input{
     position: relative;
-    top: -140px;
-}
-
-.Todos ul{
-    position: relative;
+    left: -35px;
+    
     
 }
-.Todos li{
-    list-style-type: none;
-    border:none;
-    padding: 12px 8px 12px 50px;
-    margin: 5px;
-    color: white;
-    position: relative;
-    top: -295px;
-    font-size: large;
-    cursor: pointer;
-    width: auto;
+.input{
+    position: absolute;
+    top: 100px;
+     left: 110px;
+    
+    z-index: 100;
+}
+.Todos{
+    position: absolute;
+    width: 420px;
+    padding: 0;
+    margin: 0;
+    top: 100px;
 }
 
-.Todos li::before{
+.Todos  li{
+    position: relative;
+    top: 100px;
+    list-style-type: none;
+    border:2px solid rgb(233, 205, 205);
+    border-radius: 50px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    margin: 5px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.Todos  li::before{
     content: '';
     position: absolute;
     height: 28px;
@@ -135,7 +153,7 @@ button{
     left: 12px;
 }
 
-.Todos ul li.checked::before{
+.Todos  li.checked::before{
     content: '';
     position: absolute;
     height: 28px;
@@ -148,8 +166,25 @@ button{
     left: 12px;
 }
 
-.Todos ul li.checked{
+.Todos  li.checked{
     color: #d0c6c6;
     text-decoration: line-through;
     
+}
+
+.Todos li span{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.Todos li span:hover{
+    background: #5d6678;
 }
